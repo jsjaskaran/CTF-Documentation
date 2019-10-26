@@ -1,13 +1,13 @@
 # Tools
 ## Web Exploitation
-#### **Burpsuite**
+### **Burpsuite**
 Digunakan untuk testing web security.  
 **Instalasi :**
 ```
 wget https://raw.githubusercontent.com/miqdadyyy/CTF-Documentation/master/Tools/Web%20Exploitation/burpsuite && bash burpsuite
 ```
 
-#### **SQLMAP**  
+### **SQLMAP**  
 Digunakan untuk SQL Injection.  
 **Instalasi :**
 ```
@@ -35,7 +35,7 @@ Get Data from a table :
 python sqlmap.py -u you_website_url --dump -D database_name -T table_name
 ```
 
-#### Dirsearch
+### Dirsearch
 Digunakan untuk scanning path dari website  
 **Instalasi :**
 ```
@@ -46,7 +46,7 @@ wget https://raw.githubusercontent.com/miqdadyyy/CTF-Documentation/master/Tools/
 python3 dirsearch.py -u URL
 ```
 
-#### Gitdumper
+### Gitdumper
 Digunakan untuk dump .git file  
 **Instalasi :**
 ```
@@ -57,7 +57,7 @@ wget https://raw.githubusercontent.com/miqdadyyy/CTF-Documentation/master/Tools/
 git-dumper.py your_website_url /path/to/dir_output
 ```
 
-#### Nmap
+### Nmap
 **Instalasi :**
 ```
 sudo apt install nmap
@@ -67,14 +67,20 @@ Scanning port :
 ```
 nmap -v -A your_website
 ```
-#### Javascript Deobsufator
+### Javascript Deobsufator
 Digunakan untuk perapian javascript code yang sudah di-obfuscate  
 **Url :** [https://lelinhtinh.github.io/de4js/](https://lelinhtinh.github.io/de4js/)
 
-#### JWT Translator
+### JWT Translator
 Encode dan Decode JWT   
 **Url :**
 [https://www.jsonwebtoken.io/](https://www.jsonwebtoken.io/)
+
+### Commix
+All in one jare
+```
+git clone https://github.com/commixproject/commix
+```
 
 ## Forensic
 
