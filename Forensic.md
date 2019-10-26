@@ -4,7 +4,7 @@
  1. Steghide  
     Installation :
     ```
-    sudo apt install -y steghide 
+    sudo apt install -y steghide
     ```
     Useful commands:  
     ```
@@ -15,7 +15,7 @@
     steghide extract -sf file
     ```  
     extracts embedded data from a file
-  
+
  2. Stegsolve  
     installation:  
     get it from : [github](https://github.com/eugenekolo/sec-tools/tree/master/stego/stegsolve/stegsolve)
@@ -40,14 +40,14 @@
     ```
     zsteg -E file
     ```
-    Extracts data from the given payload (example : zsteg -E b4,bgr,msb,xy name.png) 
+    Extracts data from the given payload (example : zsteg -E b4,bgr,msb,xy name.png)
  4. Exiftool  
     Sometimes important stuff is hidden in the metadata of the image or the file , exiftool can be very helpful to view the metadata of the files.  
-    Installation : 
+    Installation :
     ```
     sudo apt intall -y exiftool
     ```
-    Command : 
+    Command :
     ```
     exiftool file
     ```
@@ -55,20 +55,20 @@
     Similar like Exiftool  
     Installation :  
     ```
-    sudo apt install exiv2 
+    sudo apt install exiv2
     ```
     Usage :  
     ```
     exiv2 file
     ```
  6. Binwalk  
-    Installation : 
+    Installation :
     ```
     sudo apt install binwalk
     ```
     Usage :  
     ```
-    binwalk file 
+    binwalk file
     ```
     listing Embedded file
     ```
@@ -81,7 +81,7 @@
     ```
     sudo apt intall foremost
     ```
-    Usage : 
+    Usage :
     ```
     foremost file
     ```
@@ -90,14 +90,13 @@
     Installation :  
     Required install steghide
     ```
-    sudo apt install -y steghide 
+    sudo apt install -y steghide
     ```
     Install StegCrack :
     ```
     pip3 install stegcracker
     ```
-    Usage : 
+    Usage :
     ```
     stegcracker <file> [<wordlist>]
     ```
- 

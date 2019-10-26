@@ -84,6 +84,113 @@ git clone https://github.com/commixproject/commix
 
 ## Forensic
 
+### Steghide  
+**Installation :**
+```
+sudo apt install -y steghide
+```
+**Basic Usage :**  
+displays info about a file whether it has embedded data or not.  
+```
+steghide info file
+```
+extracts embedded data from a file
+```
+steghide extract -sf file
+```  
+### Stegsolve
+**Installation :**
+```
+[https://github.com/eugenekolo/sec-tools/tree/master/stego/stegsolve/stegsolve](https://github.com/eugenekolo/sec-tools/tree/master/stego/stegsolve/stegsolve)
+
+java --jar
+```
+
+### Zsteg
+zsteg is a tool that can detect hidden data in png and bmp files.
+
+**Installation :**
+```
+gem install zsteg
+```
+
+**Basic Usage :**
+Runs all the methods on the given file
+```
+zsteg -a file
+```
+Extracts data from the given payload (example : zsteg -E b4,bgr,msb,xy name.png)
+```
+zsteg -E file
+```
+
+### Exiftool
+Sometimes important stuff is hidden in the metadata of the image or the file , exiftool can be very helpful to view the metadata of the files.  
+
+**Installation :**
+```
+sudo apt intall -y exiftool
+```
+**Basic Usage :**
+```
+exiftool file
+```
+
+### Exiv2
+Similar like Exiftool  
+**Installation :**
+```
+sudo apt install exiv2
+```
+**Usage :**
+```
+exiv2 file
+```
+
+### Foremost
+Extract hidden file from file :D  
+**Installation :**
+```
+sudo apt intall foremost
+```
+**Basic Usage :**
+```
+foremost file
+```
+
+### Binwalk
+Extract hidden file  
+**Installation :**
+```
+sudo apt install binwalk
+```
+**Basic Usage :**  
+listing Embedded file
+```
+binwalk file
+```
+Extract Embedded file
+```
+binwalk --dd=".* file
+```
+
+### StegCracker
+relate with steghide for bruteforce steghide passparse.  
+**Installation :**  
+> Required install steghide  
+
+```
+sudo apt install -y steghide
+```
+Install StegCrack :
+```
+pip3 install stegcracker
+```
+Usage :
+```
+stegcracker <file> [<wordlist>]
+```
+
 ## Reverse Engineering
 
 ## Pwn
