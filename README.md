@@ -194,3 +194,17 @@ stegcracker <file> [<wordlist>]
 ## Reverse Engineering
 
 ## Pwn
+
+### CTF-Documentation
+
+Following is the list of tools and small description that are used for ***Capture the Flag***
+
+- kali linux
+- netdiscover - discovers devices on the network
+- nmap - to scan for services and ports on the target system
+- nikto - to find out more information about what files, folders and services are actually running on the web server
+- dirb(web content scanner) - to look for any hidden directories or files on the server
+- wp scan utility (wpscan) - to enumerate and find out what the username is for the site on server and then we can do a dictionary attack and find password
+- searchsploit - provides with exploits regarding particular tool or software running on server
+- msfconsole(metasploit.com) - searching for exploits regarding particular tool or software
+- python - language via which we can write small scripts for e.g to ask for bash shell from server
