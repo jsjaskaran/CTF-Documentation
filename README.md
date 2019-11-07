@@ -199,12 +199,59 @@ stegcracker <file> [<wordlist>]
 
 Following is the list of tools and small description that are used for ***Capture the Flag***
 
-- kali linux
-- netdiscover - discovers devices on the network
-- nmap - to scan for services and ports on the target system
-- nikto - to find out more information about what files, folders and services are actually running on the web server
-- dirb(web content scanner) - to look for any hidden directories or files on the server
-- wp scan utility (wpscan) - to enumerate and find out what the username is for the site on server and then we can do a dictionary attack and find password
-- searchsploit - provides with exploits regarding particular tool or software running on server
-- msfconsole(metasploit.com) - searching for exploits regarding particular tool or software
-- python - language via which we can write small scripts for e.g to ask for bash shell from server
+#### Kali Linux
+Kali Linux is a Debian-derived Linux distribution designed for digital forensics and penetration testing. You can download and install on VirtualBox for any Operating System.
+
+#### netdiscover
+To scan for devices on the network
+e.g. command - replace IP and ports for scan
+
+`
+netdiscover -r 192.168.0.0/24
+`
+
+#### nmap
+To scan for services and ports on the target system
+e.g. command - replace IP for scan
+
+`
+nmap -sS -AT4 192.168.0.32
+`
+
+#### nikto
+To find out more information about what files, folders and services are actually running on the web server
+e.g. command - replace IP for scan
+
+`
+nikto -host 192.168.0.32
+`
+
+#### dirb
+Web content scanner - to look for any hidden directories or files on the server
+e.g. command - replace IP for scan
+
+`dirb http://192.168.0.32`
+
+#### wpscan
+wp scan utility - to enumerate and find out what the username is for the site on server and then we can do a dictionary attack and find password
+e.g. command - replace IP for scan
+- this finds username
+`wpscan -u http://192.168.0.30/secret/ --enumerate u`
+- this finds password
+`wpscan --url http://192.168.0.32/secret --wordlist /usr/share/wordlists/dirb/big.txt --threads 2`
+
+#### searchsploit 
+provides with exploits regarding particular tool or software running on server
+e.g. command - replace name of tool and version
+
+`searchsploit ProFTPD 1.3.3c`
+
+#### msfconsole
+searching for exploits regarding particular tool or software
+e.g. commands - replace name of tool and version
+type `msfconsole`
+It will open msfconsole, on it type
+`search ProFTPD 1.3.3c`
+
+#### python
+language via which we can write small scripts for e.g to ask for bash shell from server
